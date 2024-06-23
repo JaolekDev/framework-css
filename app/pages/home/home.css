@@ -1,0 +1,77 @@
+body {
+    background-color: #2f3136;
+    color: #dcddde;
+    font-size: .9375rem;
+}
+.container {
+    padding: 1.25rem;
+}
+.sidebar {
+    background-color: #202225;
+    height: 100vh;
+    padding: 1.25rem;
+    max-width: auto;
+}
+.content {
+    padding: 1.25rem;
+    margin: auto;
+    max-width: 44.25rem;
+}
+.sidebar a, .sidebar p {
+    color: #dcddde;
+    text-decoration: none;
+    width: 15.625rem;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.checkbox-label {
+    margin-bottom: .625rem;
+    display: block;
+}
+
+.btn-link{
+    text-align: left;
+    padding: .5rem 1rem;
+}
+
+.modal-content{
+    background-color: #2f3136;
+}
+
+.modal-header{
+    border: 0;
+}
+
+.modal-footer{
+    border: 0;
+}
+
+.tarefa{
+    max-width: 100%;
+    height: 1.7813rem;
+    background-color: #202225;
+    cursor: pointer;
+}
+
+.inputTarefa{
+    width: 100%;
+    background-color: #2f3136;
+}
+
+#tarefas{
+    background-color: #202225;
+    text-align: left;
+    padding: .5rem 1rem;
+    font-size: .9375rem;
+    width: 100%;
+}
+
+input{
+    background-color: #2f3136;
+    border: none;
+}
+
+#hamburguer{
+    color: #dcddde;
+}

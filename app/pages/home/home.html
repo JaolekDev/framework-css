@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion Guide</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+		integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="d-flex">
+        <div class="sidebar p-3">
+            <!-- Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list" id="hamburguer"></i>
+            </button>
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="#"><i class="bi bi-person-circle"></i> Notion de JOAO...</a>
+                    <a class="nav-link" href="#"><i class="bi bi-search"></i> Pesquisar</a>
+                    <a class="nav-link" href="#"><i class="bi bi-inbox"></i> Caixa de entrada</a>
+                    <a class="nav-link" href="#"><i class="bi bi-gear"></i> Configurações e membros</a>
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#adicionarTarefa"><i class="bi bi-plus-lg"></i>
+                        Nova página
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="adicionarTarefa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" id="nomeTarefa" class="inputTarefa" placeholder="Digite o nome da tarefa">
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn-success" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tarefas"></div>
+                    <a class="nav-link" href="#"><i class="bi bi-pencil"></i> Anotações de aula</a>
+                    <a class="nav-link" href="#"><i class="bi bi-trash3"></i> Lixeira</a>
+                </nav>
+            </div>
+        </div>
+        <div class="content flex-grow-2">
+            <div id="detalhesTarefa">
+                <!-- Estrutura base para os detalhes das tarefas e passos -->
+                <h2 id="nomeTarefaDetalhe"></h2>
+                <div id="passos"></div>
+            </div>
+        
+            <template id="tarefa-template">
+                <div class="tarefa">
+                    <p></p>
+                </div>
+            </template>
+            
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

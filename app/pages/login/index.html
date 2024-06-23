@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+		integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="login.css" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">
+				<img src="/assets/resources/images/notion-seeklogo.png" alt="Notion logo" height="80px" class="logo">
+			</a>
+		</div>
+	</header>
+    <div class="container login-container">
+        <div class="login-box text-center">
+            <h2>Bem-vindo ao Notion!</h2>
+            <form id="login">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite o seu endereço de email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Digite a sua senha">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                <a href="#" class="d-block mt-3">Esqueceu a senha?</a>
+            </form>
+            <p class="mt-4">
+                Ao clicar em "Entrar", você reconhece que leu e entendeu, e concorda com os <a href="#">Termos de Serviço</a> e a <a href="#">Política de Privacidade</a> do Notion.
+            </p>
+            <a href="#">O que é o Notion?</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

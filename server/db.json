@@ -1,0 +1,46 @@
+{
+  "cadastros": [
+    {
+      "id": "0454",
+      "firstName": "joão",
+      "secondName": "silva",
+      "email": "jvlopes25@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "22c2",
+      "firstName": "joão",
+      "secondName": "lopes",
+      "email": "jvlopes26@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "e638",
+      "firstName": "saulo",
+      "secondName": "padilha",
+      "email": "saulo@alfaautomacao.com.br",
+      "password": "12345678"
+    },
+    {
+      "id": "4a13",
+      "firstName": "joao",
+      "secondName": "",
+      "email": "jvlopes27@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "4891",
+      "firstName": "laira",
+      "secondName": "zaine",
+      "email": "laira@zaine.com.br",
+      "password": "123"
+    },
+    {
+      "id": "549e",
+      "firstName": "roni",
+      "secondName": "fabio",
+      "email": "roni@fabio.com.br",
+      "password": "123"
+    }
+  ]
+}
